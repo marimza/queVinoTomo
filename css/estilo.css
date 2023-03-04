@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2? family= Nunito+Sans:wght@400;700 & family= Roboto & display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    
+    background-color: #580917;
+    padding: 40px;
+    
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+header nav a {
+    color: #ccb5a9;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+
+
+img{
+width: 100%;
+margin-top: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #111416;
+
+
+}
+
+
+
+p {
+    color:#ccb5a9;
+    font-size: 24px;
+    padding: 10px;
+    margin: 20px;
+
+}
+
+h1,
+h2 {
+    color: #ccb5a9;
+    font-size: 40px;
+}
+
+.leyendaInicial {
+    background-color: #73544D;
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+}
+
+.lineaInicio {
+    color: #111416;
+    font-size: 40px;
+    text-align: center;
+}
+
+.segundaLineaInicio {
+    color: #111416;
+    text-align: center;
+    font-size: 35px;
+
+}
+
+footer {
+    background-color: #580917;
+    color: #ccb5a9;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin-top: 50px;
+}
+
+footer div {
+    text-align: right;
+
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.botonArriba {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+section h1 {
+    text-align: center;
+}
+
+
+footer div p {
+    color: rgb(241, 237, 237);
+    font-size: 18px;
+
+}
+
+
+.quevinotomo {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.introqvt {
+    font-size: 30px;
+}
+
+
+.accesorios {
+    padding: 10px;
+    margin: 80px
+
+} 
+
+.tituloAccesorio {
+    color: #580917;
+}
+
+
+
+h3 {
+    color: #580917;
+}
+
+
+.accesorios {
+    background-color: #ccb5a9;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.textoAccesorios p {
+    color: #111416;
+}
+
+.imgVinos {
+    width: 371px;
+    height: 222px
+}
+
+.tiposDeVino {
+    margin-top: 30px;
+    background-color:black;
+    border-radius: 50px;
+    display: grid;
+    gap: 20px;
+    justify-items: center;
+}
+
+.tipsContenedorDeArriba {
+    padding: 10px;
+    text-align: center;
+}
+.contenedorTips {
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto auto auto;
+}
+
+.tips {
+background-color: rgb(166, 147, 147);
+}
+
+.tips p {
+    color: #111416;
+}
+
+.formContacto {
+    padding: 10px;
+    margin-top: 200px;
+    margin-bottom: 400px;
+}
+
+fieldset {
+    background-color: #ccb5a9;
+    padding: 30px;
+    border: 8px solid #ccb5a9;
+    border-radius: 10px;
+}
+
+fieldset legend {
+    color: #580917;
+    font-size: 30px;
+}
+
+fieldset label {
+    color:#580917;
+}
+
+.labelsContacto {
+    font-size: 23px;
+    padding: 5px;
+    margin: 30px;
+}
+
+.contacto {
+    padding: 5px;
+    margin-top: 80px;
+    text-align: center;
+}
