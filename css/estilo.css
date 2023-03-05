@@ -6,10 +6,10 @@
 }
 
 header {
-    
+
     background-color: #580917;
     padding: 40px;
-    
+
 }
 
 nav ul {
@@ -27,9 +27,9 @@ header nav a {
 }
 
 
-img{
-width: 100%;
-margin-top: 10px;
+img {
+    width: 100%;
+    margin-top: 10px;
 }
 
 ul {
@@ -47,7 +47,7 @@ body {
 
 
 p {
-    color:#ccb5a9;
+    color: #ccb5a9;
     font-size: 24px;
     padding: 10px;
     margin: 20px;
@@ -131,37 +131,138 @@ footer div p {
     font-size: 30px;
 }
 
+/*----Accesorios----*/
 
-.accesorios {
-    padding: 10px;
-    margin: 80px
-
-} 
+.tituloAccesorios {
+    margin-top: 30px;
+}
 
 .tituloAccesorio {
     color: #580917;
 }
 
-
-
 h3 {
     color: #580917;
 }
 
-
-.accesorios {
-    background-color: #ccb5a9;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction:row;
-    align-items: center;
+.grillaAccesorios {
     padding: 10px;
+    margin: 50px;
 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "decantador aireador cortagotas""termometro termometro cortacapsulas""sacacorchos sacacorchos sacacorchos";
+}
+
+.accesorioUno {
+    background-color: #ccb5a9;
+    grid-area: decantador;
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+}
+
+.accesorioDos {
+    background-color: #ccb5a9;
+    grid-area: aireador;
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+}
+
+.accesorioTres {
+    background-color: #ccb5a9;
+    grid-area: cortagotas;
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+}
+
+.accesorioCuatro {
+    background-color: #ccb5a9;
+    grid-area: sacacorchos;
+    margin: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10% 45% 45%;
+    grid-template-areas: "titulosaca titulosaca" "imgsacauno imgsacados" "textosaca textosaca";
+    align-items: start;
+    justify-items: center;
+    margin: 20px;
+}
+.tituloSaca {
+    grid-area: titulosaca;
+    text-align: center;
+}
+.imgSacaUno {
+    grid-area: imgsacauno;
+    width: 60%;
+    height: auto;
+    
+}
+.imgSacaDos{
+    grid-area: imgsacados;
+    width: 60%;
+    height: auto;
+}
+.textoSacacorchos {
+    grid-area: textosaca;
+    margin-top: 100px;
+}
+
+.accesorioCinco {
+    background-color: #ccb5a9;
+    grid-area: cortacapsulas;
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+}
+
+.accesorioSeis {
+    background-color: #ccb5a9;
+    grid-area: termometro;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10% 45% 45%;
+    grid-template-areas: "tituloT tituloT""primeraimagen segundaimagen""parrafoT parrafoT";
+    align-items: baseline;
+    margin: 20px;
+}
+
+.tituloTermometro {
+    grid-area: tituloT;
+    text-align: center;
+}
+
+.primeraImgTermometro {
+    grid-area: primeraimagen;
+    margin: 15px;
+}
+
+.segundaImgTermometro {
+    grid-area: segundaimagen;
+    margin: 15px;
+}
+
+.textoT {
+    grid-area: parrafoT;
+    display: flex;
+    margin-top: 10%;
+    text-align: start;
+}
+
+.border {
+    border: 5px;
+    border-radius: 10px;
 }
 
 .textoAccesorios p {
     color: #111416;
+    font-size: medium;
+    text-align: start;
 }
+
 
 .imgVinos {
     width: 371px;
@@ -170,7 +271,7 @@ h3 {
 
 .tiposDeVino {
     margin-top: 30px;
-    background-color:black;
+    background-color: black;
     border-radius: 50px;
     display: grid;
     gap: 20px;
@@ -181,13 +282,14 @@ h3 {
     padding: 10px;
     text-align: center;
 }
+
 .contenedorTips {
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto auto;
 }
 
 .tips {
-background-color: rgb(166, 147, 147);
+    background-color: rgb(166, 147, 147);
 }
 
 .tips p {
@@ -213,7 +315,7 @@ fieldset legend {
 }
 
 fieldset label {
-    color:#580917;
+    color: #580917;
 }
 
 .labelsContacto {
