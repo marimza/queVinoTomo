@@ -186,26 +186,30 @@ h3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 10% 45% 45%;
-    grid-template-areas: "titulosaca titulosaca" "imgsacauno imgsacados" "textosaca textosaca";
+    grid-template-areas: "titulosaca titulosaca""imgsacauno imgsacados""textosaca textosaca";
     align-items: start;
     justify-items: center;
     margin: 20px;
 }
+
 .tituloSaca {
     grid-area: titulosaca;
     text-align: center;
 }
+
 .imgSacaUno {
     grid-area: imgsacauno;
     width: 60%;
     height: auto;
-    
+
 }
-.imgSacaDos{
+
+.imgSacaDos {
     grid-area: imgsacados;
     width: 60%;
     height: auto;
 }
+
 .textoSacacorchos {
     grid-area: textosaca;
     margin-top: 100px;
@@ -328,4 +332,24 @@ fieldset label {
     padding: 5px;
     margin-top: 80px;
     text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+    .grillaAccesorios {
+        grid-template-columns: 90vw;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: "decantador"
+            "aireador"
+            "cortagotas"
+            "termometro"
+            "cortacapsulas"
+            "sacacorchos";
+        width: 90%;
+        margin: auto;
+    }
+
+    .textoSacacorchos {
+        margin-top: 5px;
+    }
+
 }
