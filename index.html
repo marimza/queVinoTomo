@@ -5,59 +5,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/estilo.css">
     <title>QVT | Inicio</title>
 </head>
 
-<body>
+<body class="miBody">
     <header id="header">
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="./secciones/quevinotomo.html">¿Que vino tomo?</a>
-                </li>
-                <li>
-                    <a href="./secciones/accesorios.html">Accesorios</a>
-                </li>
-                <li>
-                    <a href="./secciones/tips.html">Elegir un buen vino</a>
-                </li>
-                <li>
-                    <a href="./secciones/contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg miNavBar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"><img src="./img/logo/logo.jpeg" class="imgLogo" alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white-50" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white-50" aria-current="page" href="./secciones/quevinotomo.html">¿Qué vino
+                                tomo?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white-50" aria-current="page"
+                                href="./secciones/accesorios.html">Accesorios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white-50" aria-current="page" href="./secciones/tips.html">Tips</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white-50" aria-current="page" href="./secciones/contacto.html">Contacto</a>
+                        </li>
 
+
+
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        
     </header>
 
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/carrusel/brindis.jpg" class="d-block w-100 imagenInicio img-fluid" alt="brindis">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/carrusel/copabotella-barril.jpg" class="d-block w-100 img-fluid imagenInicio" alt="copa, botella y barril">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/carrusel/sommelier_.jpg" class="d-block w-100 img-fluid imagenInicio" alt="sommelier">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/carrusel/vino-quesos.jpg" class="d-block w-100 img-fluid imagenInicio" alt="vino y quesos">
+            </div>
+        </div>
+    </div>
 
-    <section class="imagenesInicio">
+    <!-- <section class="imagenesInicio">
         <div>
-            <img src="./img/carrusel/brindis.jpg" alt="Amigos brindando">
+            <img src="./img/carrusel/brindis.jpg" alt="Amigos brindando" class="imagenInicio">
         </div>
         <div>
-            <img src="./img/carrusel/copabotella-barril.jpg" alt="Copa y botella">
+            <img src="./img/carrusel/copabotella-barril.jpg" alt="Copa y botella" class="imagenInicio">
         </div>
         <div>
-            <img src="./img/carrusel/sommelier_.jpg" alt="Sommelier sirviendo vino">
+            <img src="./img/carrusel/sommelier_.jpg" alt="Sommelier sirviendo vino" class="imagenInicio">
         </div>
         <div>
-            <img src="./img/carrusel/vino-quesos.jpg" alt="Vino y comida">
+            <img src="./img/carrusel/vino-quesos.jpg" alt="Vino y comida" class="imagenInicio">
         </div>
-    </section>
+    </section> -->
 
     <section class="leyendaInicial">
         <p class="lineaInicio">"No hay un maridaje perfecto, hay millones"</p>
-
-        <p class="segundaLineaInicio"> ipsum dolor, sit amet consectetur adipisicing elit. Odit, qui!
-            Mollitia autem expedita quia
-            iste
-            laudantium quis culpa minus quod reiciendis porro exercitationem repudiandae doloremque,
-            consequatur in.
-            Ut, quaerat dolor.</p>
     </section>
 
 
@@ -80,6 +108,9 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

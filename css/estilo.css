@@ -3,83 +3,20 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-header {
-
+} 
+/* Header */
+.miNavBar {
     background-color: #580917;
-    padding: 40px;
-
-}
-
-nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-}
-
-header nav a {
-    color: #ccb5a9;
+    padding: 30px;
     font-size: 20px;
-    text-decoration: none;
-
 }
-
-
-img {
-    width: 100%;
-    margin-top: 10px;
+.imgLogo {
+    height: 60px;
+    width: 60px;
+    border-color: #580917;
+    border-radius: 10px;
 }
-
-ul {
-    list-style-type: none;
-}
-
-
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #111416;
-
-
-}
-
-
-
-p {
-    color: #ccb5a9;
-    font-size: 24px;
-    padding: 10px;
-    margin: 20px;
-
-}
-
-h1,
-h2 {
-    color: #ccb5a9;
-    font-size: 40px;
-}
-
-.leyendaInicial {
-    background-color: #73544D;
-    display: flex;
-    flex-direction: row;
-    flex-direction: column;
-}
-
-.lineaInicio {
-    color: #111416;
-    font-size: 40px;
-    text-align: center;
-}
-
-.segundaLineaInicio {
-    color: #111416;
-    text-align: center;
-    font-size: 35px;
-
-}
-
+/* footer */
 footer {
     background-color: #580917;
     color: #ccb5a9;
@@ -90,189 +27,48 @@ footer {
     margin-top: 50px;
 }
 
-footer div {
-    text-align: right;
-
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #111416;
 }
-
-.redes {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+p {
+    color: #ccb5a9;
+    font-size: 20px;
+    padding: 10px;
+    margin: 20px;
 }
-
-.botonArriba {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
 section h1 {
     text-align: center;
 }
-
-
-footer div p {
-    color: rgb(241, 237, 237);
-    font-size: 18px;
-
+h1,
+h2 {
+    color: #ccb5a9;
+    font-size: 40px;
 }
 
+/* Inicio */
+.imagenInicio {
+    height: 700px;
+}
+.lineaInicio {
+    color: #580917;
+    font-size: 60px;
+    text-align: center;
+}
+.leyendaInicial {
+    margin-top:10%;
+    margin-bottom: 8%;
+    padding: 30px;
+    background-color: #ccb5a9;
+}
 
+/* ¿Qué vino tomo? */
 .quevinotomo {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-
-
-.introqvt {
-    font-size: 30px;
-}
-
-/*----Accesorios----*/
-
-.tituloAccesorios {
-    margin-top: 30px;
-}
-
-.tituloAccesorio {
-    color: #580917;
-}
-
-h3 {
-    color: #580917;
-}
-
-.grillaAccesorios {
-    padding: 10px;
-    margin: 50px;
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas: "decantador aireador cortagotas""termometro termometro cortacapsulas""sacacorchos sacacorchos sacacorchos";
-}
-
-.accesorioUno {
-    background-color: #ccb5a9;
-    grid-area: decantador;
-    display: flex;
-    flex-direction: column;
-    margin: 5%;
-}
-
-.accesorioDos {
-    background-color: #ccb5a9;
-    grid-area: aireador;
-    display: flex;
-    flex-direction: column;
-    margin: 5%;
-}
-
-.accesorioTres {
-    background-color: #ccb5a9;
-    grid-area: cortagotas;
-    display: flex;
-    flex-direction: column;
-    margin: 5%;
-}
-
-.accesorioCuatro {
-    background-color: #ccb5a9;
-    grid-area: sacacorchos;
-    margin: 5%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 10% 45% 45%;
-    grid-template-areas: "titulosaca titulosaca""imgsacauno imgsacados""textosaca textosaca";
-    align-items: start;
-    justify-items: center;
-    margin: 20px;
-}
-
-.tituloSaca {
-    grid-area: titulosaca;
-    text-align: center;
-}
-
-.imgSacaUno {
-    grid-area: imgsacauno;
-    width: 60%;
-    height: auto;
-
-}
-
-.imgSacaDos {
-    grid-area: imgsacados;
-    width: 60%;
-    height: auto;
-}
-
-.textoSacacorchos {
-    grid-area: textosaca;
-    margin-top: 100px;
-}
-
-.accesorioCinco {
-    background-color: #ccb5a9;
-    grid-area: cortacapsulas;
-    display: flex;
-    flex-direction: column;
-    margin: 5%;
-}
-
-.accesorioSeis {
-    background-color: #ccb5a9;
-    grid-area: termometro;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 10% 45% 45%;
-    grid-template-areas: "tituloT tituloT""primeraimagen segundaimagen""parrafoT parrafoT";
-    align-items: baseline;
-    margin: 20px;
-}
-
-.tituloTermometro {
-    grid-area: tituloT;
-    text-align: center;
-}
-
-.primeraImgTermometro {
-    grid-area: primeraimagen;
-    margin: 15px;
-}
-
-.segundaImgTermometro {
-    grid-area: segundaimagen;
-    margin: 15px;
-}
-
-.textoT {
-    grid-area: parrafoT;
-    display: flex;
-    margin-top: 10%;
-    text-align: start;
-}
-
-.border {
-    border: 5px;
-    border-radius: 10px;
-}
-
-.textoAccesorios p {
-    color: #111416;
-    font-size: medium;
-    text-align: start;
-}
-
-
-.imgVinos {
-    width: 371px;
-    height: 222px
-}
-
 .tiposDeVino {
     margin-top: 30px;
     background-color: black;
@@ -282,83 +78,35 @@ h3 {
     justify-items: center;
 }
 
-.tipsContenedorDeArriba {
-    padding: 10px;
-    text-align: center;
-}
-
-.contenedorTips {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto auto auto;
-}
-
-.tips {
-    background-color: rgb(166, 147, 147);
-}
-
-.tips p {
-    color: #111416;
-}
-
+/* Contacto */
 .formContacto {
     padding: 10px;
     margin-top: 100px;
     margin-bottom: 100px;
 }
-
 fieldset {
     margin-top: auto;
     padding: 30px;
     border: 8px solid #ccb5a9;
     border-radius: 10px;
 }
-
 fieldset legend {
     background-color: #ccb5a9;
     text-align: center;
     color: #580917;
     font-size: 30px;
 }
-
 fieldset label {
     color: #580917;
 }
-
 .labelsContacto {
     font-size: 23px;
     padding: 5px;
     margin: 30px;
 }
-
 .tituloContacto {
     padding: 5px;
     margin-top: 80px;
     text-align: center;
-
 }
 
-
-/* ---Para moviles--- */
-
-@media screen and (max-width: 576px) {
-
-
-
-    .grillaAccesorios {
-        grid-template-columns: 90vw;
-        grid-template-rows: auto auto auto auto auto auto;
-        grid-template-areas: "decantador"
-            "aireador"
-            "cortagotas"
-            "termometro"
-            "cortacapsulas"
-            "sacacorchos";
-        width: 90%;
-        margin: auto;
-    }
-
-    .textoSacacorchos {
-        margin-top: 5px;
-    }
-
-}
