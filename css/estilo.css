@@ -3,19 +3,25 @@
 * {
     margin: 0;
     padding: 0;
-} 
+}
+
 /* Header */
 .miNavBar {
     background-color: #580917;
-    padding: 30px;
     font-size: 20px;
 }
+
 .imgLogo {
     height: 60px;
     width: 60px;
     border-color: #580917;
     border-radius: 10px;
 }
+
+a:hover {
+    text-decoration: underline;
+}
+
 /* footer */
 footer {
     background-color: #580917;
@@ -31,15 +37,18 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #111416;
 }
+
 p {
     color: #ccb5a9;
     font-size: 20px;
     padding: 10px;
     margin: 20px;
 }
+
 section h1 {
     text-align: center;
 }
+
 h1,
 h2 {
     color: #ccb5a9;
@@ -50,25 +59,32 @@ h2 {
 .imagenInicio {
     height: 700px;
 }
+
 .lineaInicio {
     color: #580917;
     font-size: 60px;
     text-align: center;
 }
+
 .leyendaInicial {
-    margin-top:10%;
+    margin-top: 10%;
     margin-bottom: 8%;
     padding: 30px;
-    background-color: #ccb5a9;
+    background-color: rgba(248, 243, 243, 0.8);
+}
+
+.bordeInicio {
+    border-radius: 20px;
 }
 
 /* ¿Qué vino tomo? */
 .quevinotomo {
-    margin-top: 30px;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 .tiposDeVino {
     margin-top: 30px;
     background-color: black;
@@ -78,35 +94,72 @@ h2 {
     justify-items: center;
 }
 
+.imgVinos{
+    height: 15rem;
+}
+
+/* Accesorios */
+.titulo-html {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.bordeImg {
+    border-radius: 20px;
+}
+
+.imgAccesorio{
+    height: 20rem;
+}
+
+/* Tips */
+
+.parrafo-tips{
+    font-size: 30px;
+}
+.subtitulos-tips{
+    color: aliceblue;
+}
+.tips{
+    margin-top: 50px;
+}
+
+.subt-video{
+    font-size: 30px;
+}
+iframe {
+    width: 30%;
+    height: 100%;
+}
+
+
 /* Contacto */
 .formContacto {
     padding: 10px;
     margin-top: 100px;
     margin-bottom: 100px;
 }
+
 fieldset {
     margin-top: auto;
     padding: 30px;
     border: 8px solid #ccb5a9;
     border-radius: 10px;
 }
+
 fieldset legend {
     background-color: #ccb5a9;
     text-align: center;
     color: #580917;
     font-size: 30px;
 }
+
 fieldset label {
     color: #580917;
 }
+
 .labelsContacto {
     font-size: 23px;
     padding: 5px;
     margin: 30px;
 }
-.tituloContacto {
-    padding: 5px;
-    margin-top: 80px;
-    text-align: center;
-}
-
