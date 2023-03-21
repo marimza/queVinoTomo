@@ -61,20 +61,14 @@ h2 {
 }
 
 .lineaInicio {
-    color: #580917;
-    font-size: 60px;
+    color: #f1e9ea;
+    font-size: 50px;
     text-align: center;
 }
 
-.leyendaInicial {
-    margin-top: 10%;
-    margin-bottom: 8%;
-    padding: 30px;
-    background-color: rgba(248, 243, 243, 0.8);
-}
-
-.bordeInicio {
-    border-radius: 20px;
+.contenedor-inicio {
+    padding: 50px;
+    background-color: rgb(48, 46, 46);
 }
 
 /* ¿Qué vino tomo? */
@@ -94,7 +88,7 @@ h2 {
     justify-items: center;
 }
 
-.imgVinos{
+.imgVinos {
     height: 15rem;
 }
 
@@ -108,25 +102,28 @@ h2 {
     border-radius: 20px;
 }
 
-.imgAccesorio{
+.imgAccesorio {
     height: 20rem;
 }
 
 /* Tips */
 
-.parrafo-tips{
+.parrafo-tips {
     font-size: 30px;
 }
-.subtitulos-tips{
+
+.subtitulos-tips {
     color: aliceblue;
 }
-.tips{
+
+.tips {
     margin-top: 50px;
 }
 
-.subt-video{
+.subt-video {
     font-size: 30px;
 }
+
 iframe {
     width: 30%;
     height: 100%;
