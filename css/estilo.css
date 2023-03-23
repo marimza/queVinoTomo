@@ -5,7 +5,7 @@
     padding: 0;
 }
 
-/* Header */
+
 .miNavBar {
     background-color: #580917;
     font-size: 20px;
@@ -22,7 +22,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* footer */
+
 footer {
     background-color: #580917;
     color: #ccb5a9;
@@ -55,7 +55,7 @@ h2 {
     font-size: 40px;
 }
 
-/* Inicio */
+
 .imagenInicio {
     height: 700px;
 }
@@ -71,7 +71,7 @@ h2 {
     background-color: rgb(48, 46, 46);
 }
 
-/* ¿Qué vino tomo? */
+
 .quevinotomo {
     margin-top: 100px;
     display: flex;
@@ -92,7 +92,7 @@ h2 {
     height: 15rem;
 }
 
-/* Accesorios */
+
 .titulo-html {
     margin-top: 100px;
     text-align: center;
@@ -106,7 +106,7 @@ h2 {
     height: 20rem;
 }
 
-/* Tips */
+
 
 .parrafo-tips {
     font-size: 30px;
@@ -130,7 +130,7 @@ iframe {
 }
 
 
-/* Contacto */
+
 .formContacto {
     padding: 10px;
     margin-top: 100px;
@@ -159,4 +159,4 @@ fieldset label {
     font-size: 23px;
     padding: 5px;
     margin: 30px;
-}
+} 
