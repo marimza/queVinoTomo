@@ -71,7 +71,7 @@ h2 {
     height: 700px;
 }
 .lineaInicio {
-    color: #f1e9ea;
+    color: #580910ea;
     font-size: 50px;
     text-align: center;
 }
@@ -131,8 +131,12 @@ h2 {
 /* HTML 3: Accesorios */
 
 .imgAccesorio {
-    height: 20rem;
+    height: 200px;
+    width: 250px;
 }
+
+
+
 .bordeImg {
     border-radius: 20px;
 }
@@ -149,14 +153,6 @@ h2 {
 .tips {
     margin-top: 50px;
 }
-.subt-video {
-    font-size: 30px;
-}
-iframe {
-    width: 30%;
-    height: 100%;
-}
-
 
 /* HTML 5: Contacto */
 
@@ -178,12 +174,15 @@ fieldset legend {
     font-size: 30px;
 }
 fieldset label {
-    color: #580917;
+    color: #110d0e;
 }
 .labelsContacto {
-    font-size: 23px;
+    font-size: 20px;
     padding: 5px;
-    margin: 30px;
+    margin: 10px;
+}
+.inputEmail {
+    width: 170px;
 }
 
 
