@@ -5,78 +5,84 @@
     padding: 0;
 }
 
+
 /* Header */
 
 .miNavBar {
-    background-color: #580917;
+    background-color: rgba(0, 0, 0, 0.908);
     font-size: 20px;
 }
-
 .imgLogo {
     height: 60px;
     width: 60px;
     border-color: #580917;
     border-radius: 10px;
 }
-
 a:hover {
     text-decoration: underline;
 }
 
+
 /* Footer */
 
 footer {
-    background-color: #580917;
+    background-color: rgba(0, 0, 0, 0.875);
     color: #ccb5a9;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     align-items: flex-end;
     margin-top: 50px;
 }
 
+
 /* General */
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #111416;
-}
+    background-color: #580910ea;
 
+}
 p {
     color: #ccb5a9;
     font-size: 20px;
     padding: 10px;
     margin: 20px;
 }
-
 section h1 {
     text-align: center;
 }
-
-h1,
+h1 {
+    font-size: 35px;
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+}
 h2 {
     color: #ccb5a9;
-    font-size: 40px;
+    font-size: 25px;
+    text-align: center;
 }
 
-/* Index */
+
+/* HTML 1: Index */
 
 .imagenInicio {
     height: 700px;
 }
-
 .lineaInicio {
     color: #f1e9ea;
     font-size: 50px;
     text-align: center;
 }
-
 .contenedor-inicio {
     padding: 50px;
-    background-color: rgb(48, 46, 46);
+    background-image: url(../img/corchos.jpeg);
+    background-size: cover;
 }
 
-/* Que vino tomo */
+
+/* HTML 2: Que vino tomo */
 
 .quevinotomo {
     margin-top: 100px;
@@ -84,34 +90,30 @@ h2 {
     flex-direction: column;
     justify-content: center;
 }
-
 .contenedorQvt {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas:
-    "blanco tinto"
-    "rosado espumante";
+        "blanco"
+        "tinto"
+        "rosado"
+        "espumante";
     gap: 15px;
     justify-items: center;
 }
-
 .blanco {
     grid-area: blanco;
 }
-
 .rosado {
     grid-area: rosado;
 }
-
 .tinto {
     grid-area: tinto;
 }
-
 .espumante {
     grid-area: espumante;
 }
-
 .tiposDeVino {
     background-color: black;
     border-radius: 10px;
@@ -119,79 +121,80 @@ h2 {
     flex-direction: column;
     align-items: center;
 }
-
 .imgVinos {
-    height: 15rem;
-    width: 25rem;
+    height: 200px;
+    width: 250px;
+    margin-top: 10px;
 }
 
 
-.titulo-html {
-    margin-top: 100px;
-    text-align: center;
-}
-
-.bordeImg {
-    border-radius: 20px;
-}
-
-/* Accesorios */
+/* HTML 3: Accesorios */
 
 .imgAccesorio {
     height: 20rem;
 }
+.bordeImg {
+    border-radius: 20px;
+}
 
-/* Tips */
+
+/* HTML 4: Tips */
 
 .parrafo-tips {
     font-size: 30px;
 }
-
 .subtitulos-tips {
     color: aliceblue;
 }
-
 .tips {
     margin-top: 50px;
 }
-
 .subt-video {
     font-size: 30px;
 }
-
 iframe {
     width: 30%;
     height: 100%;
 }
 
-/* Contacto */
+
+/* HTML 5: Contacto */
 
 .formContacto {
     padding: 10px;
     margin-top: 100px;
     margin-bottom: 100px;
 }
-
 fieldset {
     margin-top: auto;
     padding: 30px;
     border: 8px solid #ccb5a9;
     border-radius: 10px;
 }
-
 fieldset legend {
     background-color: #ccb5a9;
     text-align: center;
     color: #580917;
     font-size: 30px;
 }
-
 fieldset label {
     color: #580917;
 }
-
 .labelsContacto {
     font-size: 23px;
     padding: 5px;
     margin: 30px;
+}
+
+
+@media (min-width:1024px) {
+    .contenedorQvt {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "blanco tinto"
+            "rosado espumante";
+        gap: 15px;
+        justify-items: center;
+    }
 }
