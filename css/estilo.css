@@ -153,6 +153,56 @@ h2 {
     width: 250px;
 }
 
+.grillaAccesorios {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "decantador"
+        "aireador"
+        "cortagota"
+        "sacacorcho"
+        "cortacapsula"
+        "termometro";
+    gap: 15px;
+    justify-items: center;
+}
+
+.decantador {
+    border: 3px solid whitesmoke;
+    border-radius: 5px;
+    grid-area: decantador;
+}
+
+.aireador {
+    border: 3px solid whitesmoke;
+    border-radius: 5px;
+    grid-area: aireador;
+}
+
+.sacacorcho {
+    border: 3px solid whitesmoke;
+    border-radius: 5px;
+    grid-area: sacacorcho;
+}
+
+.cortacapsula {
+    border: 3px solid whitesmoke;
+    border-radius: 5px;
+    grid-area: cortacapsula;
+}
+.cortagota {
+    border: 3px solid whitesmoke;
+    border-radius: 5px;
+    grid-area: cortagota;
+}
+
+.termometro {
+    border: 3px solid whitesmoke;
+    border-radius: 5px;
+    grid-area: termometro;
+}
+
 .boxAccesorio:hover {
     transform: scale(1.1);
     transition-property: all;
@@ -235,6 +285,16 @@ fieldset label {
         grid-template-areas:
             "blanco tinto"
             "rosado espumante";
+        gap: 15px;
+        justify-items: center;
+    }
+    .grillaAccesorios {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "decantador aireador"
+            "cortagota cortacapsula"
+            "sacacorcho termometro";
         gap: 15px;
         justify-items: center;
     }
